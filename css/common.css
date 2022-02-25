@@ -1,0 +1,54 @@
+.hidden {
+  display: none;
+}
+#clock {
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 7px;
+  font-size: 6em;
+}
+
+#greeting {
+  text-align: center;
+  color: whitesmoke;
+}
+
+form {
+  text-align: center;
+}
+form input[type="text"]{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+form input[type="text"]:focus {
+  border: none;
+}
+
+
+form input[type="text"]::placeholder {
+  color: white;
+  font-size: 15px;
+}
+
+form input[type="submit"]{
+  background-color: aliceblue;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px;
+
+}
+
+.flex {
+  margin: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex div {
+  background-color: rgba(255,255,255,0.7);
+  width: 150px;
+  padding: 20px;
+  margin: 10px;
+  word-break: break-word;
+}
