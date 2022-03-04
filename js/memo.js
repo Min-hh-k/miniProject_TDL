@@ -1,16 +1,6 @@
 const memoBoard = document.querySelector("#memo-board");
 const memoForm = document.querySelector("#memo-form");
 const memoInput = document.querySelector("#memo-form input");
-const savememo = ["미리만들어진 메모","미리만들어진 메모2","추가메모"];
-const savememoform = [
-  {memo: "메모", time: "12:08"},
-  {memo: "메모2", time: "12:09"}
-]
-for (let m of savememo) {
-  let memo = document.createElement("div");
-  memoBoard.appendChild(memo);
-  memo.innerHTML = m
-}
 
 function memoFormSubmit (event) {
   event.preventDefault();
@@ -28,6 +18,18 @@ function memoFormSubmit (event) {
   //console.dir(memoInput)
   memoInput.autofocus = true;
 
+  const button = document.createElement("button")
+  button.textContent = "X";
+  //X버튼 이벤트리스너
+  button.addEventListener('click',memoDelete)
+  //memo 에 체크박스와 내용의 X버튼 추가
+  memo.appendChild(button)
 }
 
 memoForm.addEventListener('submit', memoFormSubmit);
+
+function memoDelete(event) {
+  //div 를 찾아 삭제(remove)
+  //parentNode == div, 빼면 X버튼만 사라짐
+  event.target.parentNode.remove(); 
+} 

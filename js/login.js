@@ -17,6 +17,6 @@ function onLoginSubmit (event) {  //console.dir(loginInput) 안에 있는 속성
 
 
 // 이벤트 리스너: 이벤트가 발생하는지 듣고 있는 메소드
-// 이벤트가 발생할 떄 그 함수를 실행시켜 줌
+// 이벤트가 발생할 때 그 함수를 실행시켜 줌
 // 어디에 이벤트가 발생하면, 어떤 함수 실행시켜야 하는지
 loginForm.addEventListener('submit', onLoginSubmit);
