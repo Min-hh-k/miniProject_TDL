@@ -22,7 +22,7 @@ function memoFormSubmit (event) {
   button.textContent = "X";
   //X버튼 이벤트리스너
   button.addEventListener('click',memoDelete)
-  //memo 에 체크박스와 내용의 X버튼 추가
+  //memo 에 X버튼 추가
   memo.appendChild(button)
 }
 

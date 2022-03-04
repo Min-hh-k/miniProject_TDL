@@ -13,11 +13,11 @@ function todoFormButton() {
   checkbox.type = "checkbox"
   //체크박스 이벤트리스너 추가
   checkbox.addEventListener('click',todoCheck)
-  //내용 : createTextNode
+  //내용 : createTextNode로 작성
   const text = document.createTextNode(todoInput.value)
   //X버튼
   const button = document.createElement("button")
-  button.textContent = " X";
+  button.textContent = "X";
   //X버튼 이벤트리스너
   button.addEventListener('click',todoDelete)
   //li 에 체크박스와 내용의 X버튼 추가
@@ -26,7 +26,7 @@ function todoFormButton() {
   li.appendChild(button)
  //ul에 li 추가
   todoBoard.appendChild(li)
-  todoInput.value = ""
+  todoInput.value = "" // 다음 값 초기화
 }
 
 function todoCheck(event) {
